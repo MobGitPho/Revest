@@ -1,0 +1,120 @@
+{
+  "section": {
+    "label_en": "Sections",
+    "label_fr": "Sections"
+  },
+  "e_commerce_category": {
+    "label_en": "Products categories",
+    "label_fr": "Catégories de produits"
+  },
+  "e_commerce_product": {
+    "label_en": "Products",
+    "label_fr": "Produits"
+  },
+  "e_commerce_order": {
+    "label_en": "Orders",
+    "label_fr": "Commandes"
+  },
+  "e_commerce_promo": {
+    "label_en": "Promotion",
+    "label_fr": "Promotion"
+  },
+  "subscription_account": {
+    "label_en": "Subscription Accounts",
+    "label_fr": "Comptes Abonnement"
+  },
+  "newsletter_campaign": {
+    "label_en": "Newsletter campaign",
+    "label_fr": "Campagne de Newsletter"
+  },
+  "newsletter_email": {
+    "label_en": "Newsletter emails",
+    "label_fr": "Emails de la newsletter"
+  },
+  "news_category": {
+    "label_en": "News categories",
+    "label_fr": "Categories d'articles"
+  },
+  "news_article": {
+    "label_en": "Articles",
+    "label_fr": "Articles"
+  },
+  "news_comment": {
+    "label_en": "News comments",
+    "label_fr": "Commentaires des articles"
+  },
+  "news_tag": {
+    "label_en": "News tags",
+    "label_fr": "Etiquettes des articles"
+  },
+  "ad_id": {
+    "label_en": "Ad identifiers",
+    "label_fr": "Identifiants publicitaires"
+  },
+  "ad": {
+    "label_en": "Ads",
+    "label_fr": "Publicités"
+  },
+  "tables_backup": {
+    "label_en": "Tables backups",
+    "label_fr": "Sauvegardes des tables",
+    "display": false
+  },
+  "medias_backup": {
+    "label_en": "Medias backups",
+    "label_fr": "Sauvegardes des medias",
+    "display": false
+  },
+  "menu_location": {
+    "label_en": "Menu location",
+    "label_fr": "Emplacement du menu"
+  },
+  "website_info": {
+    "label_en": "Website Info",
+    "label_fr": "Informations du site"
+  },
+  "notification": {
+    "label_en": "Notifications",
+    "label_fr": "Notifications"
+  },
+  "menu_item": {
+    "label_en": "Menu structure",
+    "label_fr": "Structure du menu"
+  },
+  "setting": {
+    "label_en": "Settings",
+    "label_fr": "Paramètres"
+  },
+  "access": {
+    "label_en": "Access Management",
+    "label_fr": "Gestion des accès"
+  },
+  "widget": {
+    "label_en": "Widgets",
+    "label_fr": "Widgets"
+  },
+  "media": {
+    "label_en": "Medias",
+    "label_fr": "Medias"
+  },
+  "page": {
+    "label_en": "Page",
+    "label_fr": "Page"
+  },
+  "menu": {
+    "label_en": "Menu",
+    "label_fr": "Menu"
+  },
+  "user": {
+    "label_en": "Users",
+    "label_fr": "Utilisateurs"
+  },
+  "e_commerce_shelf": {
+    "label_fr": "Rayons de produits",
+    "label_en": "Products shelf"
+  },
+  "session": {
+    "label_fr": "Sessions",
+    "label_en": "Sessions"
+  }
+}

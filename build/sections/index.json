@@ -1,0 +1,570 @@
+{
+  "nav_bar_section": {
+    "uid": "883869f2-ffc9-4168-87ff-5e9443a56bcd",
+    "sid": "nav_bar_section",
+    "name_fr": "Nav Bar Section",
+    "name_en": "Nav Bar Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "carousel_section": {
+    "uid": "06f25c69-163f-40af-8e2d-38316544ea0d",
+    "sid": "carousel_section",
+    "name_fr": "Carousel Section",
+    "name_en": "Carousel Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "property_filter_section": {
+    "uid": "0f4618b9-c35e-41d0-8a68-6a7f14429829",
+    "sid": "property_filter_section",
+    "name_fr": "Property Filter Section",
+    "name_en": "Property Filter Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "featured_prop_section": {
+    "uid": "414b7075-bda8-47cd-a415-c9f0c992ad2c",
+    "sid": "featured_prop_section",
+    "name_fr": "Featured Prop Section",
+    "name_en": "Featured Prop Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "all_prop_section": {
+    "uid": "87b3aa94-b053-4e6f-bfac-3a8ca421ee10",
+    "sid": "all_prop_section",
+    "name_fr": "All Prop Section",
+    "name_en": "All Prop Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "profit_section": {
+    "uid": "2168832a-1d04-48d3-b1ae-4923d4887d4d",
+    "sid": "profit_section",
+    "name_fr": "Profit Section",
+    "name_en": "Profit Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "start_section": {
+    "uid": "0698da56-4de4-438b-8ded-f921ce50ac45",
+    "sid": "start_section",
+    "name_fr": "Start Section",
+    "name_en": "Start Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "number_section": {
+    "uid": "44526572-a0a5-4402-bc50-f2ebb1a24149",
+    "sid": "number_section",
+    "name_fr": "Number Section",
+    "name_en": "Number Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "testimony_section": {
+    "uid": "198c5668-a694-47c8-b9ed-77591a22a886",
+    "sid": "testimony_section",
+    "name_fr": "Testimony Section",
+    "name_en": "Testimony Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "market_section": {
+    "uid": "d0e17978-9025-4dbb-8c76-879dc718f418",
+    "sid": "market_section",
+    "name_fr": "Market Section",
+    "name_en": "Market Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "footer_section": {
+    "uid": "3dc9e202-9d90-4662-80ed-93766fc0ee77",
+    "sid": "footer_section",
+    "name_fr": "Footer Section",
+    "name_en": "Footer Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_section": {
+    "uid": "7332c379-e30f-4d98-a7ca-53a6ecf510b3",
+    "sid": "banner_section",
+    "name_fr": "Banner Section",
+    "name_en": "Banner Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "properties_page_section": {
+    "uid": "49fb52df-6df8-4be0-930f-cbc17abc36ec",
+    "sid": "properties_page_section",
+    "name_fr": "Properties Page Section",
+    "name_en": "Properties Page Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "properties_page_detail_section": {
+    "uid": "3a0fe35a-3c0f-46b0-a09b-43875513d702",
+    "sid": "properties_page_detail_section",
+    "name_fr": "Properties Page Detail Section",
+    "name_en": "Properties Page Detail Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_tertiaire_section": {
+    "uid": "4adaaf94-361b-432d-b387-ed0d0c9174a1",
+    "sid": "banner_tertiaire_section",
+    "name_fr": "Banner Tertiaire Section",
+    "name_en": "Banner Tertiaire Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "alert_news_letter_section": {
+    "uid": "eadb493d-9f37-441f-96dd-555779c83aed",
+    "sid": "alert_news_letter_section",
+    "name_fr": "Alert News Letter Section",
+    "name_en": "Alert News Letter Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_loan_section": {
+    "uid": "618ec1b3-d716-474d-9da3-5a034817f8f8",
+    "sid": "banner_loan_section",
+    "name_fr": "Banner Loan Section",
+    "name_en": "Banner Loan Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "properties_loan_section": {
+    "uid": "33d1c1bc-dfea-4b88-9429-fbf599a660dd",
+    "sid": "properties_loan_section",
+    "name_fr": "Properties Loan Section",
+    "name_en": "Properties Loan Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loan_detail_section": {
+    "uid": "0cb5b3b3-4d41-4acb-86d1-571f497f557e",
+    "sid": "loan_detail_section",
+    "name_fr": "Loan Detail Section",
+    "name_en": "Loan Detail Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loan_galerie_section": {
+    "uid": "9fe0d81f-9046-4c14-a981-70774aacd143",
+    "sid": "loan_galerie_section",
+    "name_fr": "Loan Galerie Section",
+    "name_en": "Loan Galerie Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loan_propetie_detail_section": {
+    "uid": "a16e51b5-8de5-46b4-940f-acc72f449460",
+    "sid": "loan_propetie_detail_section",
+    "name_fr": "Loan Propetie Detail Section",
+    "name_en": "Loan Propetie Detail Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loan_alert_news_letter_section": {
+    "uid": "ec20bb54-1e36-4eb7-b0ef-a20b01a0353b",
+    "sid": "loan_alert_news_letter_section",
+    "name_fr": "Loan Alert News Letter Section",
+    "name_en": "Loan Alert News Letter Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loan_investment_amount_section": {
+    "uid": "2f50ae35-db58-4060-99d8-a4eec622cb1a",
+    "sid": "loan_investment_amount_section",
+    "name_fr": "Loan Investment Amount Section",
+    "name_en": "Loan Investment Amount Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loan_faq_question_section": {
+    "uid": "2753b5aa-9fdb-4495-b838-2ed6ce4febd3",
+    "sid": "loan_faq_question_section",
+    "name_fr": "Loan Faq Question Section",
+    "name_en": "Loan Faq Question Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_loan_application_section": {
+    "uid": "1f99debd-4c52-4eed-a5a2-b7f2195bd455",
+    "sid": "banner_loan_application_section",
+    "name_fr": "Banner Loan Application Section",
+    "name_en": "Banner Loan Application Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "list_propertie_hero_section": {
+    "uid": "4830bd4d-0e42-4001-b436-ee0e67e464af",
+    "sid": "list_propertie_hero_section",
+    "name_fr": "List Propertie Hero Section",
+    "name_en": "List Propertie Hero Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "list_propertie_overview_section": {
+    "uid": "7da8bf56-313f-4841-a455-a082271665ae",
+    "sid": "list_propertie_overview_section",
+    "name_fr": "List Propertie Overview Section",
+    "name_en": "List Propertie Overview Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "list_propertie_number_section": {
+    "uid": "a33b17b6-e2e2-4210-bbbb-2df87b20bcca",
+    "sid": "list_propertie_number_section",
+    "name_fr": "List Propertie Number Section",
+    "name_en": "List Propertie Number Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "list_propertie_worktwo_section": {
+    "uid": "90032038-2b6a-406e-9fcd-eed18024830d",
+    "sid": "list_propertie_worktwo_section",
+    "name_fr": "List Propertie Worktwo Section",
+    "name_en": "List Propertie Worktwo Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_contact_section": {
+    "uid": "48ab79b3-c801-48e1-8c44-0416043fd060",
+    "sid": "banner_contact_section",
+    "name_fr": "Banner Contact Section",
+    "name_en": "Banner Contact Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "contact_overview_section": {
+    "uid": "a4a43dc5-a96e-4d01-98e6-8d6db3a5e8de",
+    "sid": "contact_overview_section",
+    "name_fr": "Contact Overview Section",
+    "name_en": "Contact Overview Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "contact_form_section": {
+    "uid": "d3bccd3a-d171-421a-a619-5818cb5020cd",
+    "sid": "contact_form_section",
+    "name_fr": "Contact Form Section",
+    "name_en": "Contact Form Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "login_back_section": {
+    "uid": "e89bb6e7-f87c-4c1f-84a2-254bd87d16fd",
+    "sid": "login_back_section",
+    "name_fr": "Login Back Section",
+    "name_en": "Login Back Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "login_header_section": {
+    "uid": "6b61b973-54b5-41e5-9447-243452df723f",
+    "sid": "login_header_section",
+    "name_fr": "Login Header Section",
+    "name_en": "Login Header Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "login_registration_section": {
+    "uid": "358ce302-c300-471e-a2dd-3d23405b963b",
+    "sid": "login_registration_section",
+    "name_fr": "Login Registration Section",
+    "name_en": "Login Registration Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "login_page_section": {
+    "uid": "90cb4cbc-3209-4a9a-9dc9-651e75e712a0",
+    "sid": "login_page_section",
+    "name_fr": "Login Page Section",
+    "name_en": "Login Page Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "registration_page_section": {
+    "uid": "cd60c97f-9f8a-4924-b25c-b86e8f113fe3",
+    "sid": "registration_page_section",
+    "name_fr": "Registration Page Section",
+    "name_en": "Registration Page Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "about_overview_section": {
+    "uid": "9a947a3b-861b-4173-8eaf-af5ce710489f",
+    "sid": "about_overview_section",
+    "name_fr": "About Overview Section",
+    "name_en": "About Overview Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "about_image_gallerie_section": {
+    "uid": "0b1e44e0-5024-4e5b-83e1-e42c7cb9f819",
+    "sid": "about_image_gallerie_section",
+    "name_fr": "About Image Gallerie Section",
+    "name_en": "About Image Gallerie Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "about_team_section": {
+    "uid": "ed133805-2507-464c-8134-d0c84d55efdc",
+    "sid": "about_team_section",
+    "name_fr": "About Team Section",
+    "name_en": "About Team Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "market_small_section": {
+    "uid": "85c80c5a-71d9-4cd5-991b-aacb4617d51f",
+    "sid": "market_small_section",
+    "name_fr": "Market Small Section",
+    "name_en": "Market Small Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "about_openjob_section": {
+    "uid": "bcd8d7b3-5295-458e-a3b6-13b3cd764708",
+    "sid": "about_openjob_section",
+    "name_fr": "About Openjob Section",
+    "name_en": "About Openjob Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "video_illustration_section": {
+    "uid": "e705756a-ea61-4cf5-85e9-87d0d31b3d87",
+    "sid": "video_illustration_section",
+    "name_fr": "Video Illustration Section",
+    "name_en": "Video Illustration Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_affiliate_section": {
+    "uid": "ca19724d-2cc3-40f1-8b29-3a5231e53e43",
+    "sid": "banner_affiliate_section",
+    "name_fr": "Banner Affiliate Section",
+    "name_en": "Banner Affiliate Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "affiliate_market_section": {
+    "uid": "03cb6828-f335-459b-bae2-99345b0d51e7",
+    "sid": "affiliate_market_section",
+    "name_fr": "Affiliate Market Section",
+    "name_en": "Affiliate Market Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "affiliate_steptwo_section": {
+    "uid": "5f156a9b-b7e6-4f27-9c35-d189ea899469",
+    "sid": "affiliate_steptwo_section",
+    "name_fr": "Affiliate Steptwo Section",
+    "name_en": "Affiliate Steptwo Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_blog_section": {
+    "uid": "9f497f7d-34ee-42fe-9bf7-8c8533a1ac87",
+    "sid": "banner_blog_section",
+    "name_fr": "Banner Blog Section",
+    "name_en": "Banner Blog Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "blog_overview_section": {
+    "uid": "cdad3765-3071-462b-97fe-a736652d8e69",
+    "sid": "blog_overview_section",
+    "name_fr": "Blog Overview Section",
+    "name_en": "Blog Overview Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "blog_latest_post_section": {
+    "uid": "071703be-991d-4a12-b32f-16fbadec1268",
+    "sid": "blog_latest_post_section",
+    "name_fr": "Blog Latest Post Section",
+    "name_en": "Blog Latest Post Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_blog_single_section": {
+    "uid": "c83c1d94-16a2-45d4-a468-622f63dfdbbb",
+    "sid": "banner_blog_single_section",
+    "name_fr": "Banner Blog Single Section",
+    "name_en": "Banner Blog Single Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "blog_single_section": {
+    "uid": "77a40356-04f3-4f5e-a8f4-309bb60ed7d6",
+    "sid": "blog_single_section",
+    "name_fr": "Blog Single Section",
+    "name_en": "Blog Single Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "blog_single_latest_post_section": {
+    "uid": "4f3a7ea7-a6a7-4411-bda4-79462a8864c4",
+    "sid": "blog_single_latest_post_section",
+    "name_fr": "Blog Single Latest Post Section",
+    "name_en": "Blog Single Latest Post Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "team_section": {
+    "uid": "8c40f742-6866-401b-915d-36f87ad57ef9",
+    "sid": "team_section",
+    "name_fr": "Team Section",
+    "name_en": "Team Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "career_image_galerie_section": {
+    "uid": "ffcb5bf6-4f94-4eb2-b7ef-444b36d21532",
+    "sid": "career_image_galerie_section",
+    "name_fr": "Career Image Galerie Section",
+    "name_en": "Career Image Galerie Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "career_open_job_section": {
+    "uid": "5f5a3593-0d9c-48ae-a2d2-0f26576f9ac1",
+    "sid": "career_open_job_section",
+    "name_fr": "Career Open Job Section",
+    "name_en": "Career Open Job Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "career_detail_section": {
+    "uid": "55fa3a42-9e16-4355-b0e6-800881d42a0f",
+    "sid": "career_detail_section",
+    "name_fr": "Career Detail Section",
+    "name_en": "Career Detail Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "start_space_section": {
+    "uid": "2138e7f4-8a03-4c0c-a1ce-fbf7b2627010",
+    "sid": "start_space_section",
+    "name_fr": "Start Space Section",
+    "name_en": "Start Space Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "how_communiti_section": {
+    "uid": "1b78a176-74fc-4377-ba64-d1d230710321",
+    "sid": "how_communiti_section",
+    "name_fr": "How Communiti Section",
+    "name_en": "How Communiti Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_how_section": {
+    "uid": "64e90a83-b9de-447b-ac09-46164067dfc5",
+    "sid": "banner_how_section",
+    "name_fr": "Banner How Section",
+    "name_en": "Banner How Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "how_overview_section": {
+    "uid": "9a7619cd-3dea-4923-9110-62ff598e19db",
+    "sid": "how_overview_section",
+    "name_fr": "How Overview Section",
+    "name_en": "How Overview Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_key_risk_section": {
+    "uid": "dbf4a954-e729-40e1-afaf-0a2d6af62c4f",
+    "sid": "banner_key_risk_section",
+    "name_fr": "Banner Key Risk Section",
+    "name_en": "Banner Key Risk Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "key_risk_faq_section": {
+    "uid": "0c353582-4013-4db6-9860-299e1b6c2d44",
+    "sid": "key_risk_faq_section",
+    "name_fr": "Key Risk Faq Section",
+    "name_en": "Key Risk Faq Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loyal_program": {
+    "uid": "0247cb0c-df26-4a66-912c-0feb4890185f",
+    "sid": "loyal_program",
+    "name_fr": "Section",
+    "name_en": "Loyal Program",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "loyal_program_section": {
+    "uid": "d82d1048-d00c-4fbc-a373-329a84351abe",
+    "sid": "loyal_program_section",
+    "name_fr": "Loyal Program Section",
+    "name_en": "Loyal Program Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "terms_conditition_term_section": {
+    "uid": "f23c2f04-5ce8-4ec9-a1d5-4f3a8e2571b9",
+    "sid": "terms_conditition_term_section",
+    "name_fr": "Terms Conditition Term Section",
+    "name_en": "Terms Conditition Term Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "privacy_policy_section": {
+    "uid": "2a858b9b-1432-48ca-b105-fef970921e0c",
+    "sid": "privacy_policy_section",
+    "name_fr": "Privacy Policy Section",
+    "name_en": "Privacy Policy Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "banner_support_section": {
+    "uid": "4d041e66-e81d-4d69-8127-d8d32eb66fbe",
+    "sid": "banner_support_section",
+    "name_fr": "Banner Support Section",
+    "name_en": "Banner Support Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "error_section": {
+    "uid": "1009e6ac-de03-4890-9247-3acc3960b7cb",
+    "sid": "error_section",
+    "name_fr": "Error Section",
+    "name_en": "Error Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "nav_bar_dashboard_section": {
+    "uid": "a731f283-4f23-4556-b3f4-347ce8bbc732",
+    "sid": "nav_bar_dashboard_section",
+    "name_fr": "Nav Bar Dashboard Section",
+    "name_en": "Nav Bar Dashboard Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "footer_dashboard_section": {
+    "uid": "a7919575-213f-441b-ae75-3358431ccc64",
+    "sid": "footer_dashboard_section",
+    "name_fr": "Footer Dashboard Section",
+    "name_en": "Footer Dashboard Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "dashboard_main_section": {
+    "uid": "7570e269-5441-408a-b684-cf14408ad582",
+    "sid": "dashboard_main_section",
+    "name_fr": "Dashboard Main Section",
+    "name_en": "Dashboard Main Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  }
+}
