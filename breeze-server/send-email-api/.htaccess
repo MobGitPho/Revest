@@ -1,0 +1,12 @@
+RewriteEngine On
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+    Header set Access-Control-Allow-Headers: "origin, x-requested-with, x-api-key, content-type"
+</IfModule>
+
+RewriteBase /breeze-server/send-email-api
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
