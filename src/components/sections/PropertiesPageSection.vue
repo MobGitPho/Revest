@@ -2,7 +2,7 @@
 // section: PropertiesPageSection
 import { useRoute } from 'vue-router';
 import { useRouter } from 'vue-router'
-import { NCarousel, NSpace,NPagination } from 'naive-ui';
+import { NCarousel, NSpace, NPagination } from 'naive-ui';
 const { t } = useI18n()
 const route = useRoute()
 const router = useRouter()
@@ -33,11 +33,11 @@ function paginateArray(array, pageSize, pageNumber) {
   return array.slice(startIndex, endIndex)
 }
 const openArticlePage = (article) => {
-    if (article) {
-        dbNewsArticleStore.article = article
-        router.push(`/propertiesdetails/${article.slug}`)
-        
-    }
+  if (article) {
+    dbNewsArticleStore.article = article
+    router.push(`/propertiesdetails/${article.slug}`)
+
+  }
 }
 </script>
 
@@ -47,7 +47,7 @@ const openArticlePage = (article) => {
     <section class="properties__filter section__space__bottom">
       <div class="container wow fadeInUp">
         <div class="properties__filter__wrapper">
-          <h6>Showing <span>{{duplicableWidgets.length}}</span> properties</h6>
+          <h6>Showing <span>{{ duplicableWidgets.length }}</span> properties</h6>
           <div class="grid__wrapper">
             <select class="grid__select">
               <option data-display="Sort By">Sort By</option>
@@ -80,8 +80,8 @@ const openArticlePage = (article) => {
                     <div class="property__item__content">
                       <div class="item__head">
                         <div class="item__head__left">
-                          <h4>{{apLocation(al?.ville)}}</h4>
-                          <p><i class="fa-solid fa-location-dot"></i> {{al?.localisation}}
+                          <h4>{{ apLocation(al?.ville) }}</h4>
+                          <p><i class="fa-solid fa-location-dot"></i> {{ al?.localisation }}
                           </p>
                         </div>
                         <div class="item__head__right">
@@ -111,23 +111,23 @@ const openArticlePage = (article) => {
                             aria-valuemax="100"></div>
                         </div>
                         <div class="project__info">
-                          <p class="project__has"><span class="project__has__investors">{{al?.nbinvest}}
+                          <p class="project__has"><span class="project__has__investors">{{ al?.nbinvest }}
                               Investors</span> | <span class="project__has__investors__amount"><i
-                                class="fa-solid fa-dollar-sign"></i> {{al?.price}}</span> <span
-                              class="project__has__investors__percent">({{al?.percent}}%)</span></p>
+                                class="fa-solid fa-dollar-sign"></i> {{ al?.price }}</span> <span
+                              class="project__has__investors__percent">({{ al?.percent }}%)</span></p>
                           <p class="project__goal">
-                            <i class="fa-solid fa-dollar-sign"></i> {{al?.total}} Goal
+                            <i class="fa-solid fa-dollar-sign"></i> {{ al?.total }} Goal
                           </p>
                         </div>
                       </div>
                       <div class="item__info">
                         <div class="item__info__single">
                           <p>Annual Return</p>
-                          <h6>{{al?.return}}</h6>
+                          <h6>{{ al?.return }}</h6>
                         </div>
                         <div class="item__info__single">
                           <p>Maximum Term</p>
-                          <h6>{{al?.maxterm}} Months</h6>
+                          <h6>{{ al?.maxterm }} Months</h6>
                         </div>
                         <div class="item__info__single">
                           <p>Property Type</p>
@@ -145,12 +145,13 @@ const openArticlePage = (article) => {
                           </div>
                           <div class="item__security__content">
                             <p class="secondary">Security</p>
-                            <h6>{{al?.security}}</h6>
+                            <h6>{{ al?.security }}</h6>
                           </div>
                         </div>
                         <div class="item__cta__group">
                           <a href="registration.html" class="button button--effect">Invest Now</a>
-                          <a href="#" class="button button--secondary button--effect" @click.prevent="openArticlePage(al)" >Details</a>
+                          <a href="#" class="button button--secondary button--effect"
+                            @click.prevent="openArticlePage(al)">Details</a>
                         </div>
                       </div>
                       <div class="invest__cta__wrapper">
@@ -183,13 +184,13 @@ const openArticlePage = (article) => {
               </div>
             </div>
           </template>
-       </div>
+        </div>
         <section>
           <n-space justify="center" style="margin-top: 2rem">
             <n-pagination v-model:page="page" :page-count="Math.ceil(duplicableWidgets.length / 3)" />
           </n-space>
         </section>
-       <!--div class="cta__btn">
+        <!--div class="cta__btn">
           <a href="property-details.html" class="button button--effect">Load More</a>
         </div-->
       </div>
@@ -197,15 +198,24 @@ const openArticlePage = (article) => {
   </section>
 </template>
 <style scoped>
-  .n-pagination
-    .n-pagination-item:not(
-      .n-pagination-item--disabled
-    ).n-pagination-item--active {
-    color: #143b50;
-    border-color: #e7bd67;
-  }
+select {
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+}
 
-  .n-pagination .n-pagination-item:not(.n-pagination-item--disabled):hover {
-    color: #e7bd67;
-  }
+.grid__select {
+  width: auto;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.n-pagination .n-pagination-item:not(.n-pagination-item--disabled).n-pagination-item--active {
+  color: #143b50;
+  border-color: #e7bd67;
+}
+
+.n-pagination .n-pagination-item:not(.n-pagination-item--disabled):hover {
+  color: #e7bd67;
+}
 </style>

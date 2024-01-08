@@ -490,3 +490,21 @@
     </section>
   </section>
 </template>
+<style scoped>
+select {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.grid__select{
+    width: auto;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+</style>

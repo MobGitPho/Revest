@@ -18,7 +18,7 @@
   <section>
     <!-- Put your section template code here -->
     <section class="ask section__space bg__img" 
-    :style="`background:url('/assets/images/ask-bg.png'); top; left`">
+    :style="`background:url('/assets/images/ask-bge.png'); top`">
         <div class="container">
             <div class="ask__area">
                 <div class="alert__newsletter__area">
@@ -84,3 +84,14 @@
     </section>
   </section>
 </template>
+<style scoped>
+.input__alt .input-group .nice-select .current::before {
+  content: "";
+  width: 30px;
+  height: 16px;
+  background-image: url("../images/flag.png");
+  background-size: cover;
+  margin-right: 10px;
+  color: #434e9e80;
+}
+</style>

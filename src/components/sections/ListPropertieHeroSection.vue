@@ -18,7 +18,7 @@
   <section>
     <!-- Put your section template code here -->
     <section class="hero hero--two hero--three hero__list clear__top pos__rel over__hi bg__img"
-        data-background="assets/images/hero/list-bg.png">
+        :style="`background:url('/assets/images/hero/list-bg.png')`">
         <div class="container">
             <div class="hero__area">
                 <div class="row">

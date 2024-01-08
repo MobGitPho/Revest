@@ -86,3 +86,15 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
     </div>
   </section>
 </template>
+<style scoped>
+select{
+  width: 100%;
+  border-radius: 10px;
+    border: 1px solid #c3c7e4;
+    margin-bottom: 20px;
+}
+.type__select{
+  align-content: center;
+  padding: 20px;
+}
+</style>

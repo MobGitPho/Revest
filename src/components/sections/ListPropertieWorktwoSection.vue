@@ -17,7 +17,8 @@
 <template>
   <section>
     <!-- Put your section template code here -->
-    <section class="work__two section__space bg__img" data-background="/assets/images/gd-bg.png">
+    <section class="work__two section__space bg__img" 
+    :style="`background:url('/assets/images/gd-bg.png')`" >
         <div class="container">
             <div class="work__two__area wow fadeInUp">
                 <div class="section__header">

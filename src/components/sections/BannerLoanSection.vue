@@ -72,3 +72,31 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+select {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.location__select{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.property__select{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+</style>

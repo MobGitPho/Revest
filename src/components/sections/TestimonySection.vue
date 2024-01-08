@@ -27,7 +27,7 @@ function star(nb) {
     <section>
         <!-- Put your section template code here -->
         <section class="testimonial section__space pos__rel over__hi bg__img"
-            data-background="/assets/images/testimonial/dot-map.png">
+            :style="`background:url('/assets/images/testimonial/dot-map.png');top ;left`">
             <div class="container">
                 <div class="testimonial__area">
                     <div class="section__header">
@@ -37,28 +37,30 @@ function star(nb) {
                     </div>
                     <n-carousel show-arrow autoplay :slides-per-view="1" :space-between="20" :loop="true" draggable>
                         <template v-for="(tm, index) in duplicableWidgets" :key="index">
-                            <div class="item">
+                            <div class="item ">
                                 <div class="testimonial__item__wrapper">
-                                    <div class="testimonial__support">
-                                        <div class="testimonial__item bg__img"
-                                            data-background="/assets/images/testimonial/quote.png">
-                                            <div v-if="tm?.star > 0" class="testimonial__author__ratings">
-                                                <template v-for="(st, inde) in star(tm?.star)" :key="inde">
-                                                    <i class="fa-solid fa-star"></i>
-                                                </template>
-                                            </div>
+                                    <div class="item__test">
+                                        <div class="testimonial__support">
+                                            <div class="testimonial__item bg__img"
+                                                :style="`background:url('/assets/images/testimonial/quote.png') fixed no-repeat`">
+                                                <div v-if="tm?.star > 0" class="testimonial__author__ratings">
+                                                    <template v-for="(st, inde) in star(tm?.star)" :key="inde">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </template>
+                                                </div>
 
-                                            <p class="tertiary" v-html="rHtml(tm?.text)" />
-                                            <div class="testimonial__author">
-                                                <div class="testimonial__author__info">
-                                                    <div class="avatar__wrapper">
-                                                        <img v-if="tm?.image" :src="res(tm?.image)" alt="{{tm}}" />
-                                                        <img v-else src="/assets/images/testimonial/avatar.png"
-                                                            alt="Allan Murphy" />
-                                                    </div>
-                                                    <div>
-                                                        <h5>{{ tm?.name }} </h5>
-                                                        <p class="neutral-bottom">{{ tr(tm?.state) }}</p>
+                                                <p class="tertiary" v-html="rHtml(tm?.text)" />
+                                                <div class="testimonial__author">
+                                                    <div class="testimonial__author__info">
+                                                        <div class="avatar__wrapper">
+                                                            <img v-if="tm?.image" :src="res(tm?.image)" alt="{{tm}}" />
+                                                            <img v-else src="/assets/images/testimonial/avatar.png"
+                                                                alt="Allan Murphy" />
+                                                        </div>
+                                                        <div>
+                                                            <h5>{{ tm?.name }} </h5>
+                                                            <p class="neutral-bottom">{{ tr(tm?.state) }}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -100,19 +102,29 @@ function star(nb) {
     background-color: red;
     color: white;
 }
+
 .testimonial__item {
     border-radius: 10px;
+
 }
+
 .testimonial__item__wrapper {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-}
 
+}
+.item__test{
+        z-index: 1;
+    background-color: #f7f2f2;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
 .item {
 
     width: 100%;
     height: auto;
+
     /*object-fit: cover;*/
 }
 

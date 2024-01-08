@@ -13,6 +13,8 @@ const uniqueWidget = getUniqueWidgetData('wid_1')
 
 // Get duplicable widgets
 const duplicableWidgets = getDuplicableWidgetsData('wid_2')
+var mn = currentParentMenuItems(MenuLocations.HEADER);
+console.log("NAV",{mn});
 </script>
 
 <template>
