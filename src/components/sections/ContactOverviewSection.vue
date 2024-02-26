@@ -4,59 +4,85 @@
   const { t } = useI18n()
 
   const { getUniqueWidgetData, getDuplicableWidgetsData } = useWidget()
-  const { websiteInfo } = useInfo()
-  const { tr, res } = useGlobal()
+  const { websiteInfo, websiteOwnerInfo, websiteMoreInfo, socialNetworks } =
+    useInfo()
+  const { tr, res, rHtml } = useGlobal()
 
   // Get unique widget
-  const uniqueWidget = getUniqueWidgetData('wid_1')
+  const uniqueWidget = getUniqueWidgetData('contact_section')
 
   // Get duplicable widgets
   const duplicableWidgets = getDuplicableWidgetsData('wid_2')
 </script>
 
 <template>
-  <section>
-    <!-- Put your section template code here -->
-    <section class="contact__overview">
-        <div class="container">
-            <div class="contact__overview__area">
-                <div class="row">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="contact__overview__single column__space--secondary shadow__effect">
-                            <img src="/assets/images/icons/email.png" alt="email" />
-                            <h5>Send Us an Email</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                            <hr />
-                            <p class="neutral-bottom">
-                                <a href="https://pixner.net/cdn-cgi/l/email-protection#610419000c110d04210419000c110d044f020e0c"><span class="__cf_email__" data-cfemail="34575b5a40555740744651425147401a575b59">[email&#160;protected]</span></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="contact__overview__single column__space--secondary shadow__effect">
-                            <img src="/assets/images/icons/phone.png" alt="Call" />
-                            <h5>Give Us a Call</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                            <hr />
-                            <p class="neutral-bottom">
-                                <a href="tel:+17087362094">(414) 807 - 7478</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="contact__overview__single shadow__effect">
-                            <img src="/assets/images/icons/chat.png" alt="Chat" />
-                            <h5>Chat with us</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-                            <hr />
-                            <p class="neutral-bottom">
-                                <a href="#0">Open live chat</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <section v-if="uniqueWidget" class="contact__overview">
+    <div class="container">
+      <div class="contact__overview__area">
+        <div class="row">
+          <div class="col-md-6 col-xl-4">
+            <div
+              style="height: 100%"
+              class="contact__overview__single column__space--secondary shadow__effect">
+              <img src="/assets/images/icons/email.png" alt="email" />
+              <h5 v-if="tr(uniqueWidget?.title_1)">{{ tr(uniqueWidget?.title_1) }}</h5>
+              <p v-html="rHtml(uniqueWidget?.text_1)"  />
+              <hr />
+              <p class="neutral-bottom">
+                <a href=""
+                  ><span class="__cf_email__" data-cfemail="">{{
+                    websiteOwnerInfo?.email
+                  }}</span></a
+                >
+              </p>
             </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              style="height: 100%"
+              class="contact__overview__single column__space--secondary shadow__effect">
+              <img src="/assets/images/icons/phone.png" alt="Call" />
+              <h5 v-if="tr(uniqueWidget?.title_2)">{{ tr(uniqueWidget?.title_2) }}</h5>
+              <p v-html="rHtml(uniqueWidget?.text_2)" />
+              <hr />
+              <p class="neutral-bottom">
+                <a :href="`tel:${websiteOwnerInfo?.phone}`">{{
+                  websiteOwnerInfo?.phone
+                }}</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div
+              style="height: 100%"
+              class="contact__overview__single shadow__effect">
+              <img src="/assets/images/icons/chat.png" alt="Chat" />
+              <h5 v-if="tr(uniqueWidget?.title_3)">{{ tr(uniqueWidget?.title_3) }}</h5>
+              <p v-html="rHtml(uniqueWidget?.text_3)"  />
+              <hr />
+              <p class="neutral-bottom">
+                <template v-for="(socialNetwork, i) in socialNetworks" :key="i">
+                  <a
+                    v-if="socialNetwork.url"
+                    :href="socialNetwork?.url"
+                    target="_blank" 
+                    style="margin-right: 30px;margin-bottom: 10px;">
+                    <!--i
+                      :class="'fa fa-' + socialNetwork?.name"
+                      style="
+                        color: #13216e;
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 10px;
+                      "></i-->
+                    {{ socialNetwork?.name }}</a
+                  >
+                </template>
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
   </section>
 </template>

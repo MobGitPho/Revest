@@ -15,6 +15,22 @@ final class ApiKeyAuthMiddleware implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
+        if ($request->getMethod() !== "OPTIONS") {
+            $apiKey = $request->getHeaderLine('X-API-Key');
+
+            if (!$apiKey) {
+                throw new HttpUnauthorizedException($request, 'ERROR_401_API_KEY_MISSING');
+            }
+
+            if (!in_array($apiKey, Constants::API_KEYS)) {
+                throw new HttpForbiddenException($request, 'ERROR_403_API_KEY_MISSING_OR_WRONG');
+            }
+        }
+
+        return $handler->handle($request);
+    }
+    /* public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
+    {
         $apiKey = $request->getHeaderLine('X-API-Key');
 
         if (!$apiKey) {
@@ -26,5 +42,5 @@ final class ApiKeyAuthMiddleware implements MiddlewareInterface
         }
 
         return $handler->handle($request);
-    }
+    }*/
 }

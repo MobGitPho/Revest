@@ -1,86 +1,38 @@
 <script setup>
-// section: DashboardMainSection
+  // section: DashboardMainSection
 
-const { t } = useI18n()
+  const { t } = useI18n()
 
-const { getUniqueWidgetData, getDuplicableWidgetsData } = useWidget()
-const { websiteInfo } = useInfo()
-const { tr, res } = useGlobal()
+  const { getUniqueWidgetData, getDuplicableWidgetsData } = useWidget()
+  const { websiteInfo } = useInfo()
+  const { tr, res } = useGlobal()
 
-// Get unique widget
-const uniqueWidget = getUniqueWidgetData('wid_1')
+  const isOpen = ref(false)
 
-// Get duplicable widgets
-const duplicableWidgets = getDuplicableWidgetsData('wid_2')
+  // Get unique widget
+  const uniqueWidget = getUniqueWidgetData('wid_1')
+
+  // Get duplicable widgets
+  const duplicableWidgets = getDuplicableWidgetsData('wid_2')
 </script>
 
 <template>
   <section>
-    <!-- Put your section template code here -->
+
     <div class="dashboard section__space__bottom">
       <div class="container">
         <div class="dashboard__area">
           <div class="row">
-            <div class="col-xxl-3">
-              <div class="sidebar">
-                <a href="javascript:void(0)" class="close__sidebar">
-                  <i class="fa-solid fa-xmark"></i>
-                </a>
-                <div class="sidenav__wrapper">
-                  <ul>
-                    <li>
-                      <a href="dashboard.html" class="sidenav__active">
-                        <img src="/assets/images/icons/dashboard.png" alt="Dashboard" /> Dashboard
-                      </a>
-                    </li>
-                    <li>
-                      <a href="investment.html">
-                        <img src="/assets/images/icons/investments.png" alt="Investments" />
-                        Investments
-                      </a>
-                    </li>
-                    <li>
-                      <a href="transaction.html">
-                        <img src="/assets/images/icons/transactions.png" alt="Transactions" />
-                        Transactions
-                      </a>
-                    </li>
-                    <li>
-                      <a href="withdraw.html">
-                        <img src="/assets/images/icons/withdraw.png" alt="Withdraw" /> Withdraw
-                      </a>
-                    </li>
-                    <li>
-                      <a href="account.html">
-                        <img src="/assets/images/icons/account.png" alt="Account" /> Account
-                      </a>
-                    </li>
-                  </ul>
-                  <hr />
-                  <ul class="logout">
-                    <li>
-                      <a href="login.html">
-                        <img src="/assets/images/icons/logout.png" alt="Logout" /> Logout
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="sidenav__wrapper sidenav__footer">
-                  <h6>Last Login</h6>
-                  <hr />
-                  <div class="sidenav__time">
-                    <p class="secondary"><img src="/assets/images/icons/calendar.png" alt="Calendar" />
-                      02.01.2022</p>
-                    <p class="secondary">15:48:13</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <DashboardSideNavSection v-model:sideState="isOpen" />
+
             <div class="col-xxl-9">
               <div class="main__content">
                 <div class="collapse__sidebar">
-                  <h4>Dashboard</h4>
-                  <a href="javascript:void(0)" class="collapse__sidebar__btn">
+                  <h4>{{t('Dashboard')}}</h4>
+                  <a
+                    href="javascript:void(0)"
+                    class="collapse__sidebar__btn"
+                    @click="isOpen = !isOpen">
                     <i class="fa-solid fa-bars-staggered"></i>
                   </a>
                 </div>
@@ -88,7 +40,8 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                   <div class="row">
                     <div class="col-lg-5">
                       <div class="main__content-dashboard__chart">
-                        <div class="balance-report__wrapper dashboard-single__box">
+                        <div
+                          class="balance-report__wrapper dashboard-single__box">
                           <div class="balance-report">
                             <div>
                               <h4>€537,00</h4>
@@ -116,11 +69,19 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                           <div class="group">
                             <div class="group-inner">
                               <p>Amount Invested</p>
-                              <h6><img src="/assets/images/icons/invested.png" alt="Invested" />€108.934,00</h6>
+                              <h6>
+                                <img
+                                  src="/assets/images/icons/invested.png"
+                                  alt="Invested" />€108.934,00
+                              </h6>
                             </div>
                             <div class="group-inner">
                               <p>Total Earnings</p>
-                              <h6><img src="/assets/images/icons/earned.png" alt="Earned" />€12.606,00</h6>
+                              <h6>
+                                <img
+                                  src="/assets/images/icons/earned.png"
+                                  alt="Earned" />€12.606,00
+                              </h6>
                             </div>
                           </div>
                         </div>
@@ -131,17 +92,24 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                         <div class="dashboard-single__box">
                           <div class="intro">
                             <h5>My Investments</h5>
-                            <a href="investment.html">Show All<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="investment.html"
+                              >Show All<i
+                                class="fa-solid fa-arrow-right-long"></i
+                            ></a>
                           </div>
                           <div class="property-wrap">
                             <div class="poster">
                               <a href="investment.html">
-                                <img src="/assets/images/los-two.png" alt="Los Angeles" />
+                                <img
+                                  src="/assets/images/los-two.png"
+                                  alt="Los Angeles" />
                               </a>
                             </div>
                             <h4><a href="investment.html">Los Angeles</a></h4>
-                            <p><i class="fa-solid fa-location-dot"></i>8706 Herrick Ave, Los
-                              Angeles</p>
+                            <p>
+                              <i class="fa-solid fa-location-dot"></i>8706
+                              Herrick Ave, Los Angeles
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -150,19 +118,26 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                       <div class="main__content-dashboard__sidebar">
                         <div class="dashboard-single__box card-alt">
                           <div class="card-tab-btn__wrapper">
-                            <a href="#bank" class="card-tab-btn">Bank Account</a>
-                            <a href="#credit" class="card-tab-btn card-tab-btn-active">Credit
-                              Card</a>
+                            <a href="#bank" class="card-tab-btn"
+                              >Bank Account</a
+                            >
+                            <a
+                              href="#credit"
+                              class="card-tab-btn card-tab-btn-active"
+                              >Credit Card</a
+                            >
                           </div>
                           <div class="card-tab-wrp" id="bank">
                             <div class="card-tab-content">
-                              <a href="javascipt:void(0)" class="add-card"><i class="fa-solid fa-plus"></i></a>
+                              <a href="javascipt:void(0)" class="add-card"
+                                ><i class="fa-solid fa-plus"></i
+                              ></a>
                               <div class="card-content">
                                 <p class="secondary card-no">Card No.</p>
                                 <p>**** **** **** 4567</p>
                                 <div class="group">
                                   <div class="group-inner">
-                                    <p class="secondary">EXPIRY DATE </p>
+                                    <p class="secondary">EXPIRY DATE</p>
                                     <p class="secondary">09/24</p>
                                   </div>
                                   <div class="group-inner">
@@ -175,7 +150,9 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                           </div>
                           <div class="card-tab-wrp" id="credit">
                             <div class="card-tab-content">
-                              <a href="javascipt:void(0)" class="add-card"><i class="fa-solid fa-plus"></i></a>
+                              <a href="javascipt:void(0)" class="add-card"
+                                ><i class="fa-solid fa-plus"></i
+                              ></a>
                               <div class="card-content-slider-wrapper">
                                 <div class="card-content-slider">
                                   <div class="card-content-wrapper">
@@ -184,7 +161,7 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                       <p>**** **** **** 4567</p>
                                       <div class="group">
                                         <div class="group-inner">
-                                          <p class="secondary">EXPIRY DATE </p>
+                                          <p class="secondary">EXPIRY DATE</p>
                                           <p class="secondary">09/24</p>
                                         </div>
                                         <div class="group-inner">
@@ -200,7 +177,7 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                       <p>**** **** **** 4567</p>
                                       <div class="group">
                                         <div class="group-inner">
-                                          <p class="secondary">EXPIRY DATE </p>
+                                          <p class="secondary">EXPIRY DATE</p>
                                           <p class="secondary">09/24</p>
                                         </div>
                                         <div class="group-inner">
@@ -216,7 +193,7 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                       <p>**** **** **** 4567</p>
                                       <div class="group">
                                         <div class="group-inner">
-                                          <p class="secondary">EXPIRY DATE </p>
+                                          <p class="secondary">EXPIRY DATE</p>
                                           <p class="secondary">09/24</p>
                                         </div>
                                         <div class="group-inner">
@@ -232,7 +209,7 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                       <p>**** **** **** 4567</p>
                                       <div class="group">
                                         <div class="group-inner">
-                                          <p class="secondary">EXPIRY DATE </p>
+                                          <p class="secondary">EXPIRY DATE</p>
                                           <p class="secondary">09/24</p>
                                         </div>
                                         <div class="group-inner">
@@ -251,11 +228,16 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                         <div class="dashboard-single__box">
                           <div class="intro">
                             <h5>Last Income</h5>
-                            <a href="withdraw.html">Show All<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="withdraw.html"
+                              >Show All<i
+                                class="fa-solid fa-arrow-right-long"></i
+                            ></a>
                           </div>
                           <div class="last-income">
                             <div class="group">
-                              <img src="/assets/images/income.png" alt="Last Income" />
+                              <img
+                                src="/assets/images/income.png"
+                                alt="Last Income" />
                               <div>
                                 <h6>Gerolstein | Am Rasbach 1-17</h6>
                                 <p class="secondary">18.03.2022</p>
@@ -265,7 +247,9 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                           </div>
                           <div class="last-income">
                             <div class="group">
-                              <img src="/assets/images/income.png" alt="Last Income" />
+                              <img
+                                src="/assets/images/income.png"
+                                alt="Last Income" />
                               <div>
                                 <h6>Gerolstein | Am Rasbach 1-17</h6>
                                 <p class="secondary">18.03.2022</p>
@@ -275,7 +259,9 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                           </div>
                           <div class="last-income">
                             <div class="group">
-                              <img src="/assets/images/income.png" alt="Last Income" />
+                              <img
+                                src="/assets/images/income.png"
+                                alt="Last Income" />
                               <div>
                                 <h6>Gerolstein | Am Rasbach 1-17</h6>
                                 <p class="secondary">18.03.2022</p>
@@ -287,12 +273,17 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                         <div class="dashboard-single__box">
                           <div class="intro">
                             <h5>New Investments</h5>
-                            <a href="properties.html">Show All<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="properties.html"
+                              >Show All<i
+                                class="fa-solid fa-arrow-right-long"></i
+                            ></a>
                           </div>
                           <div class="new-invest">
                             <div class="poster">
                               <a href="properties.html">
-                                <img src="/assets/images/san-two.png" alt="San Francisco" />
+                                <img
+                                  src="/assets/images/san-two.png"
+                                  alt="San Francisco" />
                               </a>
                             </div>
                             <div class="invest-content">
@@ -300,14 +291,28 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                 <h6>Los Angeles</h6>
                                 <div class="progress__type progress__type--two">
                                   <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
                                       aria-valuemax="100"></div>
                                   </div>
                                   <div class="project__info">
-                                    <p class="project__has"><span class="project__has__investors">119
-                                        Investors</span> | <span class="project__has__investors__amount"><i
-                                          class="fa-solid fa-dollar-sign"></i>
-                                        4,94,196</span> <span class="project__has__investors__percent">(54.73%)</span>
+                                    <p class="project__has">
+                                      <span class="project__has__investors"
+                                        >119 Investors</span
+                                      >
+                                      |
+                                      <span
+                                        class="project__has__investors__amount"
+                                        ><i class="fa-solid fa-dollar-sign"></i>
+                                        4,94,196</span
+                                      >
+                                      <span
+                                        class="project__has__investors__percent"
+                                        >(54.73%)</span
+                                      >
                                     </p>
                                   </div>
                                 </div>
@@ -317,7 +322,9 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                           <div class="new-invest">
                             <div class="poster">
                               <a href="properties.html">
-                                <img src="/assets/images/san-two.png" alt="San Francisco" />
+                                <img
+                                  src="/assets/images/san-two.png"
+                                  alt="San Francisco" />
                               </a>
                             </div>
                             <div class="invest-content">
@@ -325,14 +332,28 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                 <h6>Los Angeles</h6>
                                 <div class="progress__type progress__type--two">
                                   <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
                                       aria-valuemax="100"></div>
                                   </div>
                                   <div class="project__info">
-                                    <p class="project__has"><span class="project__has__investors">119
-                                        Investors</span> | <span class="project__has__investors__amount"><i
-                                          class="fa-solid fa-dollar-sign"></i>
-                                        4,94,196</span> <span class="project__has__investors__percent">(54.73%)</span>
+                                    <p class="project__has">
+                                      <span class="project__has__investors"
+                                        >119 Investors</span
+                                      >
+                                      |
+                                      <span
+                                        class="project__has__investors__amount"
+                                        ><i class="fa-solid fa-dollar-sign"></i>
+                                        4,94,196</span
+                                      >
+                                      <span
+                                        class="project__has__investors__percent"
+                                        >(54.73%)</span
+                                      >
                                     </p>
                                   </div>
                                 </div>
@@ -342,7 +363,9 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                           <div class="new-invest">
                             <div class="poster">
                               <a href="properties.html">
-                                <img src="/assets/images/san-two.png" alt="San Francisco" />
+                                <img
+                                  src="/assets/images/san-two.png"
+                                  alt="San Francisco" />
                               </a>
                             </div>
                             <div class="invest-content">
@@ -350,14 +373,28 @@ const duplicableWidgets = getDuplicableWidgetsData('wid_2')
                                 <h6>Los Angeles</h6>
                                 <div class="progress__type progress__type--two">
                                   <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
                                       aria-valuemax="100"></div>
                                   </div>
                                   <div class="project__info">
-                                    <p class="project__has"><span class="project__has__investors">119
-                                        Investors</span> | <span class="project__has__investors__amount"><i
-                                          class="fa-solid fa-dollar-sign"></i>
-                                        4,94,196</span> <span class="project__has__investors__percent">(54.73%)</span>
+                                    <p class="project__has">
+                                      <span class="project__has__investors"
+                                        >119 Investors</span
+                                      >
+                                      |
+                                      <span
+                                        class="project__has__investors__amount"
+                                        ><i class="fa-solid fa-dollar-sign"></i>
+                                        4,94,196</span
+                                      >
+                                      <span
+                                        class="project__has__investors__percent"
+                                        >(54.73%)</span
+                                      >
                                     </p>
                                   </div>
                                 </div>

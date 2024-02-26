@@ -508,6 +508,56 @@ export function useNews() {
     if (tag) return `${APP_BASE_URL}/etiquette/${tag.slug}`
   }
 
+  const openLoginPage = () => {
+    router.push(`/login`)
+  }
+
+  const getLoginLink = () => {
+    return `${APP_BASE_URL}/login`
+  }
+
+  const openRegisterPage = () => {
+    router.push(`/registration`)
+  }
+
+  const getRegisterLink = () => {
+    return `${APP_BASE_URL}/registration`
+  }
+  const openPropertiesPage = () => {
+    router.push(`/propertiespage`)
+  }
+  const getPropertiesLink = () => {
+    return `${APP_BASE_URL}/propertiespage`
+  }
+  const getPropertiesDetailsLink = (article) => {
+    if (article) return `${APP_BASE_URL}/properties-details/${article.slug}`
+  }
+  const openPropertiesDetailsPage = (article) => {
+    if (article) {
+      dbNewsArticleStore.article = article
+
+      router.push(`/properties-details/${article.slug}`)
+    }
+  }
+  const openContactPage = () => {
+    router.push(`/contact`)
+  }
+  const getContactLink = () => {
+    return `${APP_BASE_URL}/contact`
+  }
+  const openAboutPage = () => {
+    router.push(`/a-propos`)
+  }
+  const getAboutLink = () => {
+    key - risks
+    return `${APP_BASE_URL}/a-propos`
+  }
+  const openkeyRiskPage = () => {
+    router.push(`/key-risks`)
+  }
+  const getkeyRiskLink = () => {
+    return `${APP_BASE_URL}/key-risks`
+  }
   return {
     parsePreviews,
     getCategories,
@@ -531,6 +581,20 @@ export function useNews() {
     getCategoryLink,
     getArticleLink,
     getTagLink,
+    openLoginPage,
+    getLoginLink,
+    openRegisterPage,
+    getRegisterLink,
+    openPropertiesPage,
+    getPropertiesLink,
+    openPropertiesDetailsPage,
+    getPropertiesDetailsLink,
+    openContactPage,
+    getContactLink,
+    openAboutPage,
+    getAboutLink,
+    openkeyRiskPage,
+    getkeyRiskLink,
     addComment,
   }
 }

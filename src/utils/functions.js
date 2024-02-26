@@ -56,3 +56,12 @@ export function formatDate(
 ) {
   return moment(date).locale(locale).format(outPattern)
 }
+
+export function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(email)
+}
+
+export function getRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min
+}

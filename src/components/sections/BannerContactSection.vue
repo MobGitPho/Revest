@@ -5,28 +5,31 @@
 
   const { getUniqueWidgetData, getDuplicableWidgetsData } = useWidget()
   const { websiteInfo } = useInfo()
-  const { tr, res } = useGlobal()
+  const { tr, res,rHtml } = useGlobal()
 
   // Get unique widget
-  const uniqueWidget = getUniqueWidgetData('wid_1')
+  const uniqueWidget = getUniqueWidgetData('contact_section')
 
   // Get duplicable widgets
   const duplicableWidgets = getDuplicableWidgetsData('wid_2')
+
 </script>
 
 <template>
-  <section>
-    <!-- Put your section template code here -->
-    <section class="support__banner contact__banner bg__img clear__top"
-       :style="`background:url('/assets/images/contact-banner-bg.png')`">
-        <div class="container">
-            <div class="support__banner__area">
-                <div class="support__banner__inner">
-                    <h1 class="neutral-top">How can we help?</h1>
-                    <h5 class="neutral-top">Got a question?</h5>
-                </div>
-            </div>
+  <section
+    class="support__banner contact__banner bg__img clear__top"
+    :style="
+      uniqueWidget?.image
+        ? `background:url(${res(uniqueWidget?.image)} )`
+        : `background:url('/assets/images/contact-banner-bg.png' )`
+    ">
+    <div class="container">
+      <div class="support__banner__area">
+        <div class="support__banner__inner">
+          <h1 v-if="tr(uniqueWidget?.title)"  class="neutral-top" > {{ tr(uniqueWidget?.title) }}</h1>
+          <h5 v-if="tr(uniqueWidget?.subtitle)" class="neutral-top">{{ tr(uniqueWidget?.subtitle) }}</h5>
         </div>
-    </section>
+      </div>
+    </div>
   </section>
 </template>

@@ -283,3 +283,13 @@ export const ArticleStatus = {
   PUBLISHED: 3,
   TRASH: 4,
 }
+
+export const AccountStatus = {
+  DISABLED: 0,
+  ENABLED: 1
+}
+ 
+export const AccountAuthStatus = {
+  NOT_COMPLETED: 0,
+  COMPLETED: 1
+}

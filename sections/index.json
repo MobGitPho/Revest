@@ -566,5 +566,53 @@
     "name_en": "Dashboard Main Section",
     "news_categories": 0,
     "e_commerce_categories": 0
+  },
+  "dashboard_side_nav_section": {
+    "uid": "b078082e-f6c2-48b1-af7f-9ff040e80d0d",
+    "sid": "dashboard_side_nav_section",
+    "name_fr": "Dashboard Side Nav Section",
+    "name_en": "Dashboard Side Nav Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "investment_main_section": {
+    "uid": "b15282c7-f3eb-4b6c-b903-5cb3a527afdb",
+    "sid": "investment_main_section",
+    "name_fr": "Investment Main Section",
+    "name_en": "Investment Main Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "transaction_main_section": {
+    "uid": "7a618b03-52e3-4a7c-85f6-0ab4aed97e1d",
+    "sid": "transaction_main_section",
+    "name_fr": "Transaction Main Section",
+    "name_en": "Transaction Main Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "with_draw_main_section": {
+    "uid": "51c06da7-1208-43bb-a671-7c5cd1144bff",
+    "sid": "with_draw_main_section",
+    "name_fr": "With Draw Main Section",
+    "name_en": "With Draw Main Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "account_main_section": {
+    "uid": "88e5bf54-3d1a-4c57-80f6-ff68e3a20d28",
+    "sid": "account_main_section",
+    "name_fr": "Account Main Section",
+    "name_en": "Account Main Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
+  },
+  "cookies_police_section": {
+    "uid": "5e3eb04e-671e-42c0-9c9d-645aec687fed",
+    "sid": "cookies_police_section",
+    "name_fr": "Cookies Police Section",
+    "name_en": "Cookies Police Section",
+    "news_categories": 0,
+    "e_commerce_categories": 0
   }
 }

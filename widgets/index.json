@@ -183,6 +183,15 @@
                 "required": true
             },
             {
+                "id": "slug",
+                "type": "slug",
+                "option": "",
+                "label_fr": "Slug",
+                "label_en": "Slug",
+                "width": 24,
+                "required": true
+            },
+            {
                 "id": "time",
                 "type": "date",
                 "option": "",
@@ -282,15 +291,6 @@
                 "required": true
             },
             {
-                "id": "slug",
-                "type": "slug",
-                "option": "",
-                "label_fr": "Slug",
-                "label_en": "Slug",
-                "width": 24,
-                "required": true
-            },
-            {
                 "id": "feature",
                 "type": "select",
                 "option": "[\"OUI\",\"NON\"]",
@@ -315,6 +315,15 @@
                 "label_fr": "Projet",
                 "label_en": "Project",
                 "width": 24,
+                "required": true
+            },
+            {
+                "id": "map",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Lien Map",
+                "label_en": "Map Link",
+                "width": 24,
                 "required": false
             }
         ]
@@ -334,7 +343,7 @@
                 "label_fr": "Sous titre",
                 "label_en": "Subtitle",
                 "width": 24,
-                "required": true
+                "required": false
             },
             {
                 "id": "title",
@@ -352,16 +361,16 @@
                 "label_fr": "Texte",
                 "label_en": "Text",
                 "width": 24,
-                "required": true
+                "required": false
             },
             {
                 "id": "video",
                 "type": "image",
                 "option": "",
-                "label_fr": "Video Image",
-                "label_en": "Video Image",
+                "label_fr": "Image",
+                "label_en": "Image",
                 "width": 24,
-                "required": true
+                "required": false
             },
             {
                 "id": "linkvideo",
@@ -370,7 +379,7 @@
                 "label_fr": "Lien Video",
                 "label_en": "Link Video",
                 "width": 24,
-                "required": true
+                "required": false
             }
         ]
     },
@@ -582,7 +591,7 @@
                 "label_fr": "Sous Titre",
                 "label_en": "Subtitle",
                 "width": 24,
-                "required": true
+                "required": false
             },
             {
                 "id": "title",
@@ -600,7 +609,7 @@
                 "label_fr": "Texte",
                 "label_en": "Text",
                 "width": 24,
-                "required": true
+                "required": false
             },
             {
                 "id": "image",
@@ -612,11 +621,56 @@
                 "required": false
             },
             {
-                "id": "image_arrow",
-                "type": "image",
+                "id": "title_0",
+                "type": "textarea-multilingual",
                 "option": "",
-                "label_fr": "Ligne Image",
-                "label_en": "Line Image",
+                "label_fr": "Titre Gain",
+                "label_en": "Title Gain",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "text_0",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Gain",
+                "label_en": "Text Gain",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_1",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Titre Gain",
+                "label_en": "Title Gain",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "text_1",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Gain",
+                "label_en": "Text Gain",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_2",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Gain",
+                "label_en": "Title Gain",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "text_2",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Gain",
+                "label_en": "Text Gain",
                 "width": 24,
                 "required": false
             }
@@ -656,6 +710,15 @@
                 "label_en": "Text under Logo",
                 "width": 24,
                 "required": false
+            },
+            {
+                "id": "btn_title",
+                "type": "text-multilingual",
+                "option": "",
+                "label_fr": "Titre Bouton",
+                "label_en": "Title Button",
+                "width": 24,
+                "required": true
             }
         ]
     },
@@ -788,6 +851,89 @@
             }
         ]
     },
+    "faq_risk_cle": {
+        "uid": "c71841f7-fe86-4fd7-954a-90ab0e482843",
+        "wid": "faq_risk_cle",
+        "duplicable": true,
+        "name_fr": "FAQ Cl\u00e9 Risques",
+        "name_en": "FAQ Risks Keys",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre",
+                "label_en": "Title",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte",
+                "label_en": "Text",
+                "width": 24,
+                "required": true
+            }
+        ]
+    },
+    "project_detail_info": {
+        "uid": "9adb8203-7bb5-4573-98de-f0a171ed185c",
+        "wid": "project_detail_info",
+        "duplicable": false,
+        "name_fr": "Projet",
+        "name_en": "Project",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "title_time",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre temps",
+                "label_en": "Title time",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_terms",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Titre Termes",
+                "label_en": "Title Terms",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "faq_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Faq",
+                "label_en": "Title Faq",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "btn_gallerie",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Bouton Gallerie",
+                "label_en": "Galerie Button",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_file",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Fichier",
+                "label_en": "Title File",
+                "width": 24,
+                "required": false
+            }
+        ]
+    },
     "project_detail": {
         "uid": "b4bbaa1e-dd13-4afa-b996-c3ecc2118aed",
         "wid": "project_detail",
@@ -806,22 +952,13 @@
                 "required": true
             },
             {
-                "id": "reasons",
-                "type": "list",
+                "id": "description",
+                "type": "html-multilingual",
                 "option": "",
-                "label_fr": "Raisons",
-                "label_en": "Reasons",
+                "label_fr": "Description",
+                "label_en": "Description",
                 "width": 24,
-                "required": false
-            },
-            {
-                "id": "when_invest",
-                "type": "list",
-                "option": "",
-                "label_fr": "Quand Investir",
-                "label_en": "When Invest",
-                "width": 24,
-                "required": false
+                "required": true
             },
             {
                 "id": "pro_investor",
@@ -847,15 +984,6 @@
                 "option": "",
                 "label_fr": "Attributeur Projet",
                 "label_en": "Project Owner\/ Borrower",
-                "width": 24,
-                "required": true
-            },
-            {
-                "id": "pro_description",
-                "type": "html-multilingual",
-                "option": "",
-                "label_fr": "Description Projet",
-                "label_en": "Project Description",
                 "width": 24,
                 "required": true
             },
@@ -985,6 +1113,850 @@
                 "label_en": "Banner Title Page Loan Application",
                 "width": 24,
                 "required": false
+            },
+            {
+                "id": "list_your_propertie_image",
+                "type": "image",
+                "option": "",
+                "label_fr": "Liste Des Propriete Image",
+                "label_en": "List Properties Image",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "list_your_propertie_subtitle",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Sous Titre Liste Propriete",
+                "label_en": "List Properties Subtitle",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "list_your_propertie_title",
+                "type": "text-multilingual",
+                "option": "",
+                "label_fr": "Titre Liste Propriete",
+                "label_en": "List Properties Title",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "list_your_propertie_text",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Liste Propriete",
+                "label_en": "List Properties Text",
+                "width": 24,
+                "required": false
+            }
+        ]
+    },
+    "loan_section": {
+        "uid": "eae2639f-46e1-42ae-973a-5fca4eee62b6",
+        "wid": "loan_section",
+        "duplicable": true,
+        "name_fr": "Loan",
+        "name_en": "Loan",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "industrie",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Nom Industrie",
+                "label_en": "Industries Name",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "name_loan",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Nom Loan",
+                "label_en": "Name Loan",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "investor",
+                "type": "number",
+                "option": "",
+                "label_fr": "Investisseur",
+                "label_en": "Investors",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "total_and_perent",
+                "type": "text",
+                "option": "",
+                "label_fr": "Total et Pourcentage",
+                "label_en": "Total and Percent",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "return_annual",
+                "type": "text",
+                "option": "",
+                "label_fr": "Retour Annuel",
+                "label_en": "Annual Return",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "maxterm",
+                "type": "number",
+                "option": "",
+                "label_fr": "Temps Max",
+                "label_en": "Max Term",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "invest_time",
+                "type": "date",
+                "option": "",
+                "label_fr": "Temps ",
+                "label_en": "Time",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "image",
+                "type": "image",
+                "option": "",
+                "label_fr": "Image",
+                "label_en": "Image",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "collateral",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Collateral",
+                "label_en": "Collateral",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "country",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Pays",
+                "label_en": "Country",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "date_deb",
+                "type": "date",
+                "option": "",
+                "label_fr": "Date Debut ",
+                "label_en": "Start Date",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "about_loan",
+                "type": "list",
+                "option": "",
+                "label_fr": "A Propos Loan ",
+                "label_en": "About Loan",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "result_about",
+                "type": "list",
+                "option": "",
+                "label_fr": "Resultat A Propos",
+                "label_en": "Result About",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_about",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Text A Propos",
+                "label_en": "Text About",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "montant_investir",
+                "type": "list",
+                "option": "",
+                "label_fr": "Montants \u00e0 Investir",
+                "label_en": "Investing From",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "interet_investir",
+                "type": "list",
+                "option": "",
+                "label_fr": "Interet Fixe",
+                "label_en": "Fixed interest",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_interest",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Inter\u00eat",
+                "label_en": "Text Interest",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "montant_limite",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Montant Investissement [ ]",
+                "label_en": "Amount Investment [ ]",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "percent_limit",
+                "type": "list",
+                "option": "",
+                "label_fr": "Pourcentages d'Investissement",
+                "label_en": "Percent Investment",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "loan_map",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Map",
+                "label_en": "Map",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "image_gallerie",
+                "type": "image-gallery",
+                "option": "",
+                "label_fr": "Gallerie",
+                "label_en": "Galleries",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "slug",
+                "type": "slug",
+                "option": "",
+                "label_fr": "Slug Unique",
+                "label_en": "Slug Unique",
+                "width": 24,
+                "required": true
+            }
+        ]
+    },
+    "loan_application": {
+        "uid": "2ed6c89d-9f52-4c88-a653-6b27a5f651c3",
+        "wid": "loan_application",
+        "duplicable": false,
+        "name_fr": "Loan Application",
+        "name_en": "Loan Application",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "investment_amount",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Total Investissement",
+                "label_en": "Investment Amount",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "percent_investment",
+                "type": "list",
+                "option": "",
+                "label_fr": "Pourcentages",
+                "label_en": "Percents",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "form_subtitle",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Sous Titre Formulaire",
+                "label_en": "Subtitle Form",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "form_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Formulaire",
+                "label_en": "Title Form",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "form_text",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Text Formulaire",
+                "label_en": "Text Form",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "subtitle_number",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Sous Titre Nombre",
+                "label_en": "Subtitle Number",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "title_number",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Nombre",
+                "label_en": "Title Number",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_number",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Text Nombre",
+                "label_en": "Number Text",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "money_lent",
+                "type": "number",
+                "option": "",
+                "label_fr": "Somme",
+                "label_en": "Money",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "average_loan_size",
+                "type": "number",
+                "option": "",
+                "label_fr": "Moyenne Loan Size",
+                "label_en": "Average Loan Size",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "funded_loans",
+                "type": "number",
+                "option": "",
+                "label_fr": "Ann\u00e9e Loans",
+                "label_en": "Funded Loans",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "average_loan_term",
+                "type": "number",
+                "option": "",
+                "label_fr": "Moyenne Loan Term",
+                "label_en": "Average Loan term",
+                "width": 24,
+                "required": true
+            }
+        ]
+    },
+    "list_properties": {
+        "uid": "a5799308-cf49-49f5-86ba-bd00af265ec2",
+        "wid": "list_properties",
+        "duplicable": false,
+        "name_fr": "Lister Tes Proprietes",
+        "name_en": "List your Property",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "sucesful_hight_value",
+                "type": "number",
+                "option": "",
+                "label_fr": "Valeur \u00e9lev\u00e9e r\u00e9ussie",
+                "label_en": "Succesful Hight Value",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "number_client_served",
+                "type": "number",
+                "option": "",
+                "label_fr": "Nombre Clients Servis",
+                "label_en": "Number Client Served",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "year",
+                "type": "date",
+                "option": "",
+                "label_fr": "Annee Experience",
+                "label_en": "Experience year ",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "subtitle_main",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Sous Titre page",
+                "label_en": "Subtitle Page",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "title_main",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Page",
+                "label_en": "Title Page",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_main",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Page",
+                "label_en": "Text Page",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "box_1_image",
+                "type": "image",
+                "option": "",
+                "label_fr": " Box Image 1",
+                "label_en": "Box Image 1",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "box_1_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Box 1",
+                "label_en": "Title Box 1",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "box_1_text",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Box 1",
+                "label_en": "Text Box 1",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "box_2_image",
+                "type": "image",
+                "option": "",
+                "label_fr": "Box Image 2",
+                "label_en": "Box Image 2",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "box_2_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Box 2",
+                "label_en": "Title Box 2",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "box_2_text",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Box 2",
+                "label_en": "Text Box 2",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "box_3_image",
+                "type": "image",
+                "option": "",
+                "label_fr": "Box Image 3",
+                "label_en": "Box Image 3",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "box_3_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Box 3",
+                "label_en": "Title Box 3",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "box_3_text",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte Box 3",
+                "label_en": " Text Box  3",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "button_submit_propertie",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Texte Bouton",
+                "label_en": "Text Button",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "how_subtitle",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Sous Titre How",
+                "label_en": "Subtitle How",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "how_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre How",
+                "label_en": "Title How",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "how_text",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Texte How",
+                "label_en": "Text How",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "round_title_1",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Titre 1",
+                "label_en": "Title 1",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "round_text_1",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": " Texte 1",
+                "label_en": "Text 1",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "round_title_2",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Titre 2",
+                "label_en": "Title 2",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "round_text_2",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte 2",
+                "label_en": "Text 2",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "round_title_3",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": " Titre 3",
+                "label_en": "Title 3",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "round_text_3",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte 3",
+                "label_en": " Text 3",
+                "width": 24,
+                "required": true
+            }
+        ]
+    },
+    "contact_section": {
+        "uid": "0fea191c-7641-44d2-ad5d-b6181c86ed4b",
+        "wid": "contact_section",
+        "duplicable": false,
+        "name_fr": "Contact",
+        "name_en": "Contact",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "image",
+                "type": "image",
+                "option": "",
+                "label_fr": "Image*",
+                "label_en": "Image*",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre",
+                "label_en": "Title",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "subtitle",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Sous titre",
+                "label_en": "Subtitle",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_1",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": " Titre 1*",
+                "label_en": " Title 1*",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_1",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": " Texte 1",
+                "label_en": "Text 1",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_2",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre 2*",
+                "label_en": "Title 2*",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_2",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte  2",
+                "label_en": "Text 2",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "title_3",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre 3*",
+                "label_en": "Title 3*",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "text_3",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Texte 3",
+                "label_en": " Text 3",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "form_title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre Formulaire",
+                "label_en": "Form Title",
+                "width": 24,
+                "required": false
+            }
+        ]
+    },
+    "about": {
+        "uid": "39b26edc-e5f3-49c9-97be-00acaf00d562",
+        "wid": "about",
+        "duplicable": false,
+        "name_fr": "A Propos",
+        "name_en": "About",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "nb_invest",
+                "type": "number",
+                "option": "",
+                "label_fr": "Nombre Investisseurs",
+                "label_en": "Investors Number",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "invest_complet",
+                "type": "number",
+                "option": "",
+                "label_fr": "Investissement Complets",
+                "label_en": "Investments Completed",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "average_annual",
+                "type": "number",
+                "option": "",
+                "label_fr": "Rendement annuel moyen",
+                "label_en": "Average Annual Return",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "link_video",
+                "type": "textarea",
+                "option": "",
+                "label_fr": "Lien video",
+                "label_en": "Link Video",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "image_video",
+                "type": "image",
+                "option": "",
+                "label_fr": "Image Video",
+                "label_en": "Image Video",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "galerie",
+                "type": "image-gallery",
+                "option": "",
+                "label_fr": "Gallerie Image",
+                "label_en": "Gallerie Image",
+                "width": 24,
+                "required": false
+            }
+        ]
+    },
+    "cgu": {
+        "uid": "66a4252f-8395-48cd-9328-495e38f69006",
+        "wid": "cgu",
+        "duplicable": false,
+        "name_fr": "Polices CGU",
+        "name_en": "Privacies Polices CGU",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "privacies_polices",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Polices CGU",
+                "label_en": "Privacy Policy",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "terms_conditions",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Termes & Conditions",
+                "label_en": "Terms & Conditions",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "cookies_polices",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Cookies",
+                "label_en": "Cookies Polices",
+                "width": 24,
+                "required": false
+            }
+        ]
+    },
+    "file": {
+        "uid": "73d01be7-8b64-40f5-9493-3f08942da847",
+        "wid": "file",
+        "duplicable": true,
+        "name_fr": "Fichier",
+        "name_en": "File",
+        "fullscreen": false,
+        "data": [
+            {
+                "id": "title",
+                "type": "textarea-multilingual",
+                "option": "",
+                "label_fr": "Titre",
+                "label_en": "Title",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "subtitle",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Sous titre",
+                "label_en": "Subtitle",
+                "width": 24,
+                "required": false
+            },
+            {
+                "id": "file",
+                "type": "file",
+                "option": "",
+                "label_fr": "Fichier",
+                "label_en": "File",
+                "width": 24,
+                "required": true
+            },
+            {
+                "id": "properties",
+                "type": "linkedwidget",
+                "option": "{\"wid\":\"properties_section_item\",\"label\":\"slug\"}",
+                "label_fr": "Propri\u00e9t\u00e9",
+                "label_en": "Propertie",
+                "width": 24,
+                "required": true
             }
         ]
     }

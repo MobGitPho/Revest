@@ -117,6 +117,7 @@ export function useMenu() {
   }
 
   const open = (item) => {
+    console.log({item})
     switch (parseInt(item.type)) {
       case MenuItemTypes.SECTION:
         router.push(item.href)

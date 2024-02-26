@@ -16,7 +16,6 @@
 
 <template>
   <section>
-    <!-- Put your section template code here -->
     <div class="wrapper bg__img" 
     :style="`background:url('/assets/images/registration-bg.png')`">
       

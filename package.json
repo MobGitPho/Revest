@@ -32,12 +32,14 @@
   },
   "dependencies": {
     "@arkn/breeze-ui": "^0.0.3",
+    "@vorms/core": "^1.1.0",
     "@vueuse/core": "^9.6.0",
     "@vueuse/head": "^1.0.17",
     "@vueuse/integrations": "^9.6.0",
     "@vueuse/router": "^9.6.0",
     "axios": "^0.26.0",
     "crypto-js": "^4.1.1",
+    "date-fns": "^3.3.1",
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
@@ -45,11 +47,13 @@
     "native-ui": "^0.0.1",
     "pinia": "^2.0.14",
     "pinia-persistence-plugin": "^0.0.4",
+    "string-sanitizer": "^2.0.2",
     "uuid": "^8.3.2",
     "validator": "^13.7.0",
-    "vue": "^3.2.30",
+    "vue": "^3.2.47",
     "vue-i18n": "^9.2.2",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vue-sanitize": "^0.2.3"
   },
   "devDependencies": {
     "@intlify/unplugin-vue-i18n": "^0.8.1",

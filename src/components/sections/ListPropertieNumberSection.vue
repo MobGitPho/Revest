@@ -29,8 +29,8 @@
                             <p>Revest enables real estate owners to sell their properties through its platform. Submit
                                 your property quickly and easily!</p>
 
-                            <p><a href="contact-us.html">Let us know about your property</a></p>
-                            <a href="login.html" class="button button--effect">Submit Your Property</a>
+                            <p><a href="/contact">Let us know about your property</a></p>
+                            <a href="/login" class="button button--effect">Submit Your Property</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
