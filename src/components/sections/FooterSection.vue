@@ -2,6 +2,7 @@
   // section: FooterSection
   import { MenuLocations } from '@/utils/enums'
   const { t } = useI18n()
+  const { RegisterEmailStatus, registerEmail } = useNewsletter()
   const { currentMenuItem, open, currentParentMenuItems } = useMenu()
   const { getUniqueWidgetData, getDuplicableWidgetsData } = useWidget()
   const { websiteInfo, websiteOwnerInfo, websitePicsInfo, websiteMoreInfo } =
@@ -13,55 +14,31 @@
 
   // Get duplicable widgets
   const duplicableWidgets = getDuplicableWidgetsData('wid_2')
+  const email = ref()
+  const message = ref({})
 
-  const formData = ref({
-    email: '',
-  })
-  let load = ref(false)
   const submit = async () => {
-    load.value = true
-    if (formData.value.email) {
-      if (formData.value.email && !_v.isEmail(formData.value.email)) {
-        console.log('Adresse mail invalid')
-        load.value = false
-        return false
-      }
-
-      console.log('Soyez patient')
-      if (load.value) {
-        afficherMessage("Message en cours d'envoie", 9000000)
-      }
-      const content = `
-        <div>
-          <b>Email</b> : ${formData.value.email} <br>
-        </div>`
-
-      const result = await sendEmail(
-        formData.value.email,
-        'News Letter',
-        'Nouveau email',
-        content,
-        websiteInfo?.email
-      )
-
-      if (result) {
-        console.log('Nous avons reçue votre message')
-        formData.value = {
-          email: '',
-        }
-        afficherMessage('Message envoyé', 5000)
-      } else {
-        console.log("Rencontre d'une erreur")
-        load.value = false
-        afficherMessage("Rencontre d'une erreur", 5000)
-      }
-    } else {
-      console.log("Entrez votre email pour s'abonner à la News Letter")
-      load.value = false
-      afficherMessage('Entrez Votre email', 5000)
+    const res = await registerEmail(email.value)
+    if (res === RegisterEmailStatus.SUCCESS) {
+      message.value.msg = t('emailSave')
+      message.value.status = 'success'
+      email.value = ''
     }
-    load.value = false
+    if (res === RegisterEmailStatus.FAILED) {
+      message.value.msg = t('We encountered an error')
+      message.value.status = 'failed'
+    }
+    if (res === RegisterEmailStatus.EXIST) {
+      message.value.msg = t('emailExist')
+      message.value.status = 'exist'
+    }
+    if (res === RegisterEmailStatus.ABORTED) {
+      message.value.msg = t('fillField')
+      message.value.status = 'aborted'
+    }
+    afficherMessage(message.value?.msg, 5000)
   }
+
   function afficherMessage(message, duree) {
     const button = document.getElementById('contact_btn')
     const small = button.querySelector('small')
@@ -72,6 +49,7 @@
       small.innerHTML = ''
     }, duree)
   }
+
 </script>
 
 <template>
@@ -91,7 +69,7 @@
                 <div class="footer__newsletter__input__group">
                   <div class="input">
                     <input
-                      v-model="formData.email"
+                      v-model="email"
                       type="email"
                       name="news__letter"
                       id="newsLetterMail"
@@ -125,7 +103,7 @@
                   alt="Revest"
                   class="logo" />
               </a>
-              <p>{{ tr(uniqueWidget?.text_logo) }}</p>
+              <p v-html="rHtml(uniqueWidget?.text_logo)"   />
               <div class="social">
                 <a :href="websiteMoreInfo?.facebook">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -224,10 +202,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-sm-9 order-1 order-sm-0">
             <div class="footer__copyright">
-              <p>
-                Copyright &copy; Revest | Designed by
-                <a href="https://themeforest.net/user/pixelaxis">Pixelaxis</a>
-              </p>
+              <p v-html="rHtml(uniqueWidget?.copyright)"   />
             </div>
           </div>
           <div class="col-sm-3">

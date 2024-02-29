@@ -77,5 +77,9 @@
   "fieldsIsRequired": "Champ requis",
   "passwordDontMatch": "Erreur ",
   "DOWNLOAD": "TELECHARGER",
-  "Reports": "Rapports"
+  "Reports": "Rapports",
+  "fillField": "Remplissez le champ ou vérifier l'email",
+  "emailExist": "Email existe déjà",
+  "We encountered an error": "Rencontre d'une erreur",
+  "emailSave": "Email enregistrer"
 }

@@ -16,7 +16,7 @@ export function useNewsletter() {
     if (dbNewsletterStore.emails.findIndex((e) => e.email == email) > -1)
       return RegisterEmailStatus.EXIST
 
-    let task = await dbNewsletterStore.addEmail(email)
+    let task = await dbNewsletterStore.addEmail({email})
 
     return task.success
       ? RegisterEmailStatus.SUCCESS

@@ -75,5 +75,9 @@
   "fieldsIsRequired": "Field is required",
   "passwordDontMatch": "Error ",
   "DOWNLOAD": "DOWNLOAD",
-  "Reports": "Reports"
+  "Reports": "Reports",
+  "fillField": "Fill Field or check email",
+  "emailExist": "Email Exist",
+  "We encountered an error": "We encountered an error",
+  "emailSave": "Email save"
 }

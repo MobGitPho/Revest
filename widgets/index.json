@@ -704,7 +704,7 @@
             },
             {
                 "id": "text_logo",
-                "type": "textarea-multilingual",
+                "type": "html-multilingual",
                 "option": "",
                 "label_fr": "Texte dessous Logo",
                 "label_en": "Text under Logo",
@@ -719,6 +719,15 @@
                 "label_en": "Title Button",
                 "width": 24,
                 "required": true
+            },
+            {
+                "id": "copyright",
+                "type": "html-multilingual",
+                "option": "",
+                "label_fr": "Copyright",
+                "label_en": "Copyright",
+                "width": 24,
+                "required": false
             }
         ]
     },

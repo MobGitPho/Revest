@@ -33,7 +33,7 @@ export function useGlobal() {
     }
 
     return (
-      parsedData[locale.value.toUpperCase()] || parsedData['FR'] || data || ''
+      parsedData[locale.value.toUpperCase()] || (parsedData['FR'] ?? data )|| ''
     )
   }
 
